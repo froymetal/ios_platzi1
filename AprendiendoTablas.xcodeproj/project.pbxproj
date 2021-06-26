@@ -13,6 +13,8 @@
 		3AF3425A26861E1C00B9F9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3425826861E1C00B9F9CA /* Main.storyboard */; };
 		3AF3425C26861E2000B9F9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3425B26861E2000B9F9CA /* Assets.xcassets */; };
 		3AF3425F26861E2000B9F9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3425D26861E2000B9F9CA /* LaunchScreen.storyboard */; };
+		3AF3426926866B8700B9F9CA /* TweertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3426726866B8700B9F9CA /* TweertTableViewCell.swift */; };
+		3AF3426A26866B8700B9F9CA /* TweertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3426826866B8700B9F9CA /* TweertTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3AF3425B26861E2000B9F9CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF3425E26861E2000B9F9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF3426026861E2000B9F9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF3426726866B8700B9F9CA /* TweertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweertTableViewCell.swift; sourceTree = "<group>"; };
+		3AF3426826866B8700B9F9CA /* TweertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweertTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		3AF3425126861E1C00B9F9CA /* AprendiendoTablas */ = {
 			isa = PBXGroup;
 			children = (
+				3AF3426626866A4F00B9F9CA /* Cells */,
 				3AF3425226861E1C00B9F9CA /* AppDelegate.swift */,
 				3AF3425426861E1C00B9F9CA /* SceneDelegate.swift */,
 				3AF3425626861E1C00B9F9CA /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				3AF3426026861E2000B9F9CA /* Info.plist */,
 			);
 			path = AprendiendoTablas;
+			sourceTree = "<group>";
+		};
+		3AF3426626866A4F00B9F9CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3AF3426726866B8700B9F9CA /* TweertTableViewCell.swift */,
+				3AF3426826866B8700B9F9CA /* TweertTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			files = (
 				3AF3425F26861E2000B9F9CA /* LaunchScreen.storyboard in Resources */,
 				3AF3425C26861E2000B9F9CA /* Assets.xcassets in Resources */,
+				3AF3426A26866B8700B9F9CA /* TweertTableViewCell.xib in Resources */,
 				3AF3425A26861E1C00B9F9CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			files = (
 				3AF3425726861E1C00B9F9CA /* ViewController.swift in Sources */,
 				3AF3425326861E1C00B9F9CA /* AppDelegate.swift in Sources */,
+				3AF3426926866B8700B9F9CA /* TweertTableViewCell.swift in Sources */,
 				3AF3425526861E1C00B9F9CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
