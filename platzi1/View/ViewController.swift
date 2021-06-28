@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class ViewController: UIViewController {
     //MARK: References UI
@@ -33,7 +34,8 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "home_segue", sender: nil)
             
         }else{
-            print("usuario invalido")
+            //print("usuario invalido")
+            showErrorDialog()
         }
         
         
@@ -58,6 +60,36 @@ class ViewController: UIViewController {
         }
     }
 
+    private func showErrorDialog(){
+        // Prepare the popup assets
+        let title = "Error"
+        let message = "Credenciales inválidas"
+        let image = UIImage(named: "pexels-photo-103290")
 
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "CANCEL") {
+            print("You canceled the car dialog.")
+        }
+
+        // This button will not the dismiss the dialog
+        //let buttonTwo = DefaultButton(title: "ADMIRE CAR", dismissOnTap: false) {
+         //   print("What a beauty!")
+        //}
+
+        //let buttonThree = DefaultButton(title: "BUY CAR", height: 60) {
+        //    print("Ah, maybe next time :)")
+        //}
+
+        // Add buttons to dialog
+        // Alternatively, you can use popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButtons([buttonOne])
+
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+    }
 }
 
